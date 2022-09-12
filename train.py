@@ -267,8 +267,8 @@ def main(train_dir):
         os.path.join(train_dir, "train"), flush_millis=3000)
     val_writer = tf.summary.create_file_writer(
         os.path.join(train_dir, "val"), flush_millis=3000)
-    model_writer = tf.keras.utils.plot_model(
-        model, to_file=os.path.join(train_dir,'modelPicture.png'), show_shapes=True, dpi = 500 )
+    # model_writer = tf.keras.utils.plot_model(
+    #     model, to_file=os.path.join(train_dir,'modelPicture.png'), show_shapes=True, dpi = 500 )
     summary_interval = 10
 
     step = 0
